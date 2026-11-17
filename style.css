@@ -62,15 +62,33 @@ a:focus {
   font-weight: normal;
 }
 
+/* Base (sotto 600 px): collegamenti in colonna. */
 nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
   margin-top: 1rem;
 }
 
 nav a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.25rem 0;
+  display: block;
+  padding: 0.5rem 0;
+  font-weight: bold;
 }
+
+/* Da 600 px: collegamenti in riga. */
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+
+  nav a {
+    padding: 0.25rem 0;
+  }
+}
+
 
 
 .intro {
