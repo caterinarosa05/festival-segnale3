@@ -6,8 +6,8 @@
   --colore-primario-scuro: #163454;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-testo: "Archivo", Arial, Helvetica, sans-serif;
+  --font-titoli: "Archivo", Georgia, "Times New Roman", serif;
 }
 
 * {
