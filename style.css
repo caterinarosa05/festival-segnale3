@@ -13,6 +13,15 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-padding-top: 11rem;
+}
+
+@media (min-width: 600px) {
+  html {
+    scroll-padding-top: 6rem;
+  }
+}
 
 body {
   margin: 0;
@@ -42,14 +51,18 @@ a:focus {
 }
 
 .site-header {
-  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.5rem 0;
+  background: var(--colore-sfondo);
   border-bottom: 4px solid var(--colore-primario);
 }
 
 .brand {
   display: inline-block;
   color: var(--colore-testo);
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: bold;
   line-height: 1.2;
   text-decoration: none;
@@ -57,8 +70,8 @@ a:focus {
 
 .brand span {
   display: block;
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
+  margin-top: 0.125rem;
+  font-size: 0.8125rem;
   font-weight: normal;
 }
 
@@ -66,22 +79,44 @@ a:focus {
 nav {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  margin-top: 1rem;
+  gap: 0;
+  margin-top: 0.5rem;
 }
 
 nav a {
   display: block;
-  padding: 0.5rem 0;
+  padding: 0.35rem 0;
   font-weight: bold;
+  line-height: 1.3;
 }
 
-/* Da 600 px: collegamenti in riga. */
 @media (min-width: 600px) {
+  .site-header {
+    padding: 0.75rem 0;
+  }
+
+  /* Logo a sinistra, menu a destra sulla stessa riga. */
+  .site-header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 2rem;
+  }
+
+  .brand {
+    font-size: 1.75rem;
+  }
+
+  .brand span {
+    font-size: 0.875rem;
+  }
+
   nav {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem 1.5rem;
+    gap: 0.25rem 1.5rem;
+    margin-top: 0;
   }
 
   nav a {
@@ -210,6 +245,7 @@ h3 {
   position: absolute;
   top: -6rem;
   left: 1rem;
+  z-index: 200;
   padding: 0.75rem 1rem;
   background: #ffffff;
   color: var(--colore-testo);
