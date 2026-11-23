@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "titolo": "Lettere in movimento",
+    "data": "2026-06-12",
+    "orario": "10:00",
+    "categoria": "Incontro",
+    "descrizione": "Come cambia un messaggio quando cambiano le lettere? Un incontro su tipografia, ritmo e comunicazione visiva.",
+    "immagine": "assets/lettere-in-movimento.svg",
+    "immagine_alt": "Lettere geometriche disposte su una griglia",
+    "sede_id": 1
+  },
+  {
+    "id": 2,
+    "titolo": "Materiali da toccare",
+    "data": "2026-06-12",
+    "orario": "12:00",
+    "categoria": "Laboratorio",
+    "descrizione": "Un laboratorio per osservare e sperimentare materiali, superfici e texture attraverso piccoli esercizi di design.",
+    "immagine": "assets/lettere-in-movimento.svg",
+    "immagine_alt": "Lettere geometriche disposte su una griglia",
+    "sede_id": 2
+  },
+  {
+    "id": 3,
+    "titolo": "Una città di segni",
+    "data": "2026-06-12",
+    "orario": "16:00",
+    "categoria": "Mostra",
+    "descrizione": "Un percorso tra immagini, simboli e messaggi che trasformano il modo di leggere gli spazi urbani.",
+    "immagine": "assets/lettere-in-movimento.svg",
+    "immagine_alt": "Lettere geometriche disposte su una griglia",
+    "sede_id": 3
+  },
+  {
+    "id": 4,
+    "titolo": "Oggetti in dialogo",
+    "data": "2026-06-13",
+    "orario": "10:00",
+    "categoria": "Incontro",
+    "descrizione": "Designer e artigiani discutono come nascono gli oggetti quotidiani, tra funzione, cura dei dettagli e possibilità di riparazione.",
+    "immagine": "assets/oggetti-dialogo.svg",
+    "immagine_alt": "Due forme geometriche si fronteggiano sopra una linea comune.",
+    "sede_id": 1
+  },
+  {
+    "id": 5,
+    "titolo": "Riparare, trasformare",
+    "data": "2026-06-13",
+    "orario": "12:00",
+    "categoria": "Laboratorio",
+    "descrizione": "Un’attività pratica per ripensare gli oggetti di uso quotidiano e immaginare nuove possibilità di riuso.",
+    "immagine": "assets/oggetti-dialogo.svg",
+    "immagine_alt": "Due forme geometriche si fronteggiano sopra una linea comune.",
+    "sede_id": 2
+  },
+  {
+    "id": 6,
+    "titolo": "Mappe immaginate",
+    "data": "2026-06-13",
+    "orario": "16:00",
+    "categoria": "Laboratorio",
+    "descrizione": "Costruiamo mappe visive per raccontare luoghi, percorsi e idee attraverso segni e forme.",
+    "immagine": "assets/oggetti-dialogo.svg",
+    "immagine_alt": "Due forme geometriche si fronteggiano sopra una linea comune.",
+    "sede_id": 3
+  }
+]
