@@ -64,9 +64,14 @@ async function caricaProgramma() {
       fetch(PERCORSO_SEDI)
     ]);
 
-    if (!rispostaEventi.ok || !rispostaSedi.ok) {
-      throw new Error("Non è stato possibile leggere i file JSON.");
-    }
+    if (!rispostaEventi.ok) {
+  throw new Error(`eventi.json non trovato (HTTP ${rispostaEventi.status})`);
+}
+
+if (!rispostaSedi.ok) {
+  throw new Error(`sedi.json non trovato (HTTP ${rispostaSedi.status})`);
+}
+
 
     const [eventi, sedi] = await Promise.all([
       rispostaEventi.json(),
@@ -94,7 +99,7 @@ async function caricaProgramma() {
   } catch (errore) {
     console.error("Errore nel caricamento del programma:", errore);
     stato.textContent =
-      "Non è stato possibile caricare il programma. Controlla i file JSON e riprova.";
+`Errore: ${errore.message}`;
   }
 }
 
